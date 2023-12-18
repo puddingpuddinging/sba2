@@ -1,0 +1,357 @@
+html {
+    font-size: 18px;
+    background-color: rgb(245, 187, 210);
+}
+/*header*/
+
+.header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgb(233, 130, 166);
+    padding: 0px 10px;
+    height: 4rem;
+      position: relative;
+      z-index: 1; /* 較低的層疊值 */
+      /* 其他樣式屬性 */
+      width: 100%;
+
+ }
+ 
+ .header li{
+    display: inline;
+    font-family:'Noto Serif TC', serif;
+    font-weight: bold;
+    background-color:rgb(207, 120, 156);
+    padding-right: 2rem;
+ }
+ 
+ .header li a {
+  font-size: 30px; /* 設置文字大小 */
+  color: rgb(37, 103, 37);
+}
+
+ .header li img {
+  width: 35px; /* 設置圖片寬度 */
+  height: 35px; /* 設置圖片高度 */
+  margin-left: 10px; /* 設置圖片左側間距 */
+}
+ 
+.header .logo {
+    flex-grow: 1;
+    color: rgb(141, 32, 70);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem; 
+ }
+ 
+ /* Banner */
+ .banner {
+  background: url("./IMG/banner.jpg");
+  background-size: cover;
+  height: 1000px;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  position: relative;
+  z-index: 999;
+  /* 設置所需的上邊距值 */
+  /* 其他樣式屬性 */
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 480px) {
+  .banner {
+  width: 110.5%;
+  }
+}
+  
+.banner h1 {
+        background-color:rgb(240, 183, 207);
+        width: 200px;
+        text-align: center;
+        color: rgb(145, 27, 72);
+        margin-top: 200px;
+        margin-left: 29px;
+        border-top: 6px solid rgb(196, 21, 143 );
+        border-bottom: 6px solid rgb(196, 21, 143 )
+}
+.banner h2 {
+    background-color: rgb(197, 138, 157);
+    width: 200px;
+    text-align: center;
+    color: white;
+    margin-top: 220px;
+    margin-left: 25px;
+ }
+ 
+ /*MV*/
+ .MV{
+   text-align: center;
+   margin-top: 100px;
+   color: rgb(204, 69, 129);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 0.1rem;
+ }
+ .video-container {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   justify-content: left;
+   background-color: rgb(6, 4, 11);
+   height: 450px;
+ }
+  .video-info {
+   margin-top: 5px;
+   text-align: left;
+   padding-left: 80px;
+   width: 300px;
+ }
+  .video-info h2 {
+   color: rgb(226, 173, 195);
+   width: 300px;
+ }
+  .video-info p {
+   color: rgb(226, 141, 170);
+   width: 300px;
+ }
+  .video-youtube {
+   margin: 20px;
+   position: relative;
+   width: 660px;
+ }
+  .video-youtube iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+  .video-thumbnails {
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: center;
+   margin-left: 10px;
+   width: 250px;
+ }
+  .video-thumbnails img {
+   width: 178px;
+   height: 100px;
+   margin: 22px;
+   border: 3px solid rgb(224, 177, 203);
+   cursor: pointer;
+ }
+  .video-thumbnails img:hover {
+   border: 3px solid rgb(238, 169, 204);
+   filter: brightness(1.5);
+ }
+/* About */
+.about {
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(204, 69, 129);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+article{
+  text-align: center;
+   margin-top: 100px;
+   color: rgb(204, 69, 129);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 0.1rem;}
+
+   .about-image-with-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-image-with-text img {
+    flex: 0 0 auto;
+    margin-right: 400px; /* 調整圖片和文字間的間距 */
+     width: 25%; /* 將圖片寬度設置為自動調整 */
+
+  }
+  
+   
+  
+  .about-image-with-text .text {
+    flex: 1;
+    font-size: 60px; /* 調整文字大小 */
+  }
+
+.image-with-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-image-with-text p {
+  font-size: 16px;
+  color: rgb(192, 134, 172);
+  font-size: 20px; /* 調整文字大小 */
+}
+.about{
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(204, 69, 129);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
+}
+.aboutCards {
+  text-align: center;
+}
+
+
+.aboutCards .col {
+
+display: inline-block;
+ margin-left: 60px;
+}
+
+.know-more-container {
+  position: relative;
+}
+
+.more-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(101, 38, 96, 0.3);
+}
+
+.know-more-link:hover + .more-content,
+.more-content:hover {
+  display: block;
+}
+
+.more-content p {
+  margin: 0;
+}
+
+.mempic {
+  width: 200px;
+ }
+ 
+ .aboutCards h3 {
+  color: rgb(220, 142, 166);
+  text-transform: uppercase;
+  font-style:oblique
+ }
+ 
+ .aboutCards p {
+  font-size: 22px;
+  color: rgb(192, 134, 172);
+ }
+
+ .aboutCards b{
+  font-size: 22px;
+  color: rgb(147, 43, 111);
+ }
+ .container {
+  position: relative;
+  /* 其他樣式設定 */
+}
+
+ 
+ .know-more-link {
+  background-color: rgb(36, 109, 51);
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.03px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+ margin-bottom: 10px;
+/* border: 2px solid rgb(224, 177, 203)*/
+ border-radius: 8px;
+ position: relative;
+ 
+ /* 其他樣式設定 */
+ }
+
+ 
+ .aboutCards a:hover {
+  background-color: rgb(111, 227, 140);
+  background-image: linear-gradient(pink, yellow);
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgb(148, 233, 179) 100%);
+}
+
+/* Contact */
+.contact{
+  text-align: center;
+  margin-top: 100px;
+  color: rgb(204, 69, 129);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.contact-container {width: 300px;
+}
+
+.img-container {
+  float: left;
+  margin-top: 120px; /* 向下移動的距離，根據需要進行調整 */
+}
+
+.map-container {
+  display: inline-block;
+}
+/* Form */
+
+.form-container { display: flex;
+  align-items: flex-start;
+  background-color: rgb(28, 17, 35);
+  z-index: 9999;
+  margin-top: 20px;
+}
+
+
+form {
+
+}
+
+form h2 {
+ color: rgb(224, 177, 203);
+ font-style: italic;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ margin-top: 20px;
+ margin-bottom: 10px;
+
+ }
+ 
+ .footer-left {
+  color: rgb(159, 134, 192);
+  font-size: 14px;
+  flex-grow: 1;
+  padding-left: 30px;
+ }
+ 
+ .social-icons {
+  padding-right: 30px;
+ }
+
+ .social-icons li {
+  display: inline;
+  padding-left: 5px;
+ }
+  
+ .social-icons svg {
+  fill: rgb(159, 134, 192);
+ }
+ 
+ 
+ 
+ 
